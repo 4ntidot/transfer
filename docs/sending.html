@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Cross | Docs - Sending and receiving data</title>
+		<meta name="theme-color" content="#ef4444">
+		<link href="../assets/favicon.png" rel="favicon" type="img/png" />
+		<meta charset="utf-8">
+		<link href="../assets/style.css" rel="stylesheet" type="text/css" />
+		<script src="../assets/js/script.js"></script>
+		<style>
+			.content {
+				display: flex;
+				padding: 0;
+			}
+			.content > nav {
+				width: 25%;
+			}
+			.content > div {
+				padding: 16px;
+			}
+		</style>
+	</head>
+	<body>
+		<nav class="navbar">
+		</nav>
+
+		<div class="content">
+			<nav class="summary">
+			</nav>
+			<div>
+				<h1>Sending and Receiving data</h1><br>
+				<h2>Sending Data</h2>
+				<p>To send data, we’ll use a first function called <code js>send()</code>.</p>
+				<div class="code">
+					<div class="tab">script.js</div>
+					<code js>import Transfer from "https://cdn.transferdataweb.repl.co/v1.js";</code>
+					<code js>var transfer = new Transfer()
+					<code js class="addition">transfer.send(:target, :cross) /* We call cross the data we want to send.*/</code>
+				</div><br>
+				<h3>How to use <code>:cross</code>?</h3>
+				<p>:cross is the data you will send to other pages.</p>
+				<p>You can put any kind of value in :cross. A string, a list, a number... every kinds are accepted.</p><br>
+				<h3>How to use <code>:target</code>?</h3>
+				<p>If you want your data to be sent to a specific page, put the path of this page in the :target value.</p>
+				<p><strong>Warning: You can't put several pages in :target. If you want to send it to several pages,you don't have any kther choice than leaving :target null.</p>
+				<p>If you want more information about :target, go to 
+			</div>
+		</div>
+	</body>
+</html>
